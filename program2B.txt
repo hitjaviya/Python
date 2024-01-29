@@ -1,0 +1,10 @@
+           
+           
+           
+           
+            orignal_list=[1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+            Dictionary= {}
+            for  i in orignal_list:
+                Dictionary[i]=orignal_list.count(i)
+                
+            print(Dictionary)

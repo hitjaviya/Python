@@ -1,0 +1,21 @@
+
+
+
+          # use dynamic dict 
+                dict1 = {3: 'x',5: 'a',1: 'z',4: 'b',2: 'y'}
+                dict2= {5:'h',6:'i',7:'t'}
+                print("dict1 ::",dict1)
+                print("dict2 ::",dict2)
+
+          # Here | is union operator for dictionary
+
+
+                dict3=dict1|dict2
+                print("Merged :: ",dict3)
+
+          # Using loops
+                kyes= dict2.keys()
+                for i in kyes:
+                    dict1[i]=dict2[i]
+                print("Merged :: ",dict1)
+

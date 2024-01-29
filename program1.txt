@@ -1,0 +1,19 @@
+            # use dynamic dict 
+                    dict1 = {3: 'x', 5: 'a',1: 'z',4: 'b',2: 'y'}
+            #sort by keys
+                    a = list(dict1.keys())
+                    a.sort()
+                    K_dict = {}
+                    for i in a:
+                        K_dict[i] = dict1[i]
+                    print("Sorted by keys :: ",K_dict)
+
+            #sort by value
+                    a = list(dict1.values())
+                    a.sort()
+                    K_dict = {}
+                    for i in a:
+                        for j in dict1:
+                            if(i == dict1[j] ):
+                                K_dict[j] = i
+                    print("Sorted by values :: ",K_dict)

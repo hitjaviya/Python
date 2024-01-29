@@ -1,0 +1,16 @@
+list_tuple=[(1, 2, 3), (4, 5, 6), (7, 8, 9), (3, 6), (9, 12)]
+divisible_by_k=[]
+k=3
+for i in list_tuple:
+    for j in range(0,len(i)):
+        if i[j]%k!=0:
+            break
+     else:
+         divisible_by_k.append(i)
+                                                     
+# Using List Comprehension    
+
+answer = [x for x in list_tuple if all(element % k == 0 for element in x)]
+print(answer)        
+                            
+print(divisible_by_k)
